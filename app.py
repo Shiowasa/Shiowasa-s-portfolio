@@ -3,7 +3,7 @@ import sqlite3
 import datetime
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 
 # DBフォルダ作成
 if not os.path.exists("ip_logs"):
